@@ -1,0 +1,8 @@
+import numpy as np
+import cv2 
+
+image=cv2.imread('scenes.jpg')
+
+src = cv2.cvtColor(image, cv2.COLOR_BGR2HSV )
+filename = 'hsv.jpg'
+cv2.imwrite(filename,src)
